@@ -1,0 +1,110 @@
+<html>
+<title>Game Color</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="fichier.js" type="text/javascript"></script>
+<link rel="stylesheet" href="styleS.css">
+
+</style>
+<body onload="demarrage()">
+
+<center>			
+<h2>Game Color v2</h2>
+
+
+
+<label id="resultat"></label>
+
+<table>
+	<tr>
+		<td class="affichage">Objectif :</td>
+		<td class="affichage">Actuellement :</td>
+	</tr>
+	<tr>
+		
+		<td><div class="couleur"><div id="color1"></div><div id="color2"></div><div id="color3"></div></div></td>
+		<td><div class="couleur"><div id="colorx1" onclick="selection1()"></div><div id="colorx2"onclick="selection2()"></div><div id="colorx3"onclick="selection3()"></div></div></td>
+	</tr>
+	
+</table>
+
+</br>
+<table>
+	<tr>
+		<td><button onclick="magentap(), verification()" class="magenta">+</button></td>
+		<td><button onclick="cyanp(), verification()" class="cyan">+</button></td>
+		<td><button onclick="jaunep(), verification()" class="jaune">+</button></td>
+	</tr>
+
+		
+	<tr>
+		<td><label>Magenta : <label id="G">0</label> / <label id="Nombre1">X</label> </label></td>
+		<td><label>Cyan : <label id="R">0</label> / <label id="Nombre2">X</label> </label></td>
+		<td><label>Jaune : <label id="B">0</label> / <label id="Nombre3">X</label> </label></td>
+	</tr>
+	
+	<tr>
+		<td><button onclick="magentam(), verification()" class="magenta">-</button></td>
+		<td><button onclick="cyanm(), verification()" class="cyan">-</button></td>
+		<td><button onclick="jaunem(), verification()" class="jaune">-</button></td>
+	</tr>
+	
+	
+</table>
+</br>
+<p>Nombre de coup : <label id="coup">0</label></p>
+
+
+<button onclick="demarrage()" >RESET</button>
+
+<div hidden>
+<p>x : <label id="x">3</label></p>
+<p>Colonne : <label id="Colonne">1</label></p>
+<p>time : <label id="time">0</label></p>
+
+<table>
+	<tr>
+		<td>R1 :<label id="R1">0</label></td>
+		<td>G1 :<label id="G1">0</label></td>
+		<td>B1 :<label id="B1">0</label></td>
+	</tr>
+	<tr>
+		<td>R2 :<label id="R2">0</label></td>
+		<td>G2 :<label id="G2">0</label></td>
+		<td>B2 :<label id="B2">0</label></td>
+	</tr>
+	<tr>
+		<td>R3 :<label id="R3">0</label></td>
+		<td>G3 :<label id="G3">0</label></td>
+		<td>B3 :<label id="B3">0</label></td>
+	</tr>
+	<tr>
+		<td>Rx1 :<label id="Rx1">0</label></td>
+		<td>Gx1 :<label id="Gx1">0</label></td>
+		<td>Bx1 :<label id="Bx1">0</label></td>
+	</tr>
+	<tr>
+		<td>Rx2 :<label id="Rx2">0</label></td>
+		<td>Gx2 :<label id="Gx2">0</label></td>
+		<td>Bx2 :<label id="Bx2">0</label></td>
+	</tr>
+	<tr>
+		<td>Rx3 :<label id="Rx3">0</label></td>
+		<td>Gx3 :<label id="Gx3">0</label></td>
+		<td>Bx3 :<label id="Bx3">0</label></td>
+	</tr>
+	
+</table>
+</div>
+
+</br></br>
+
+
+
+
+
+</center>
+
+
+</body>
+</html>
